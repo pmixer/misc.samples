@@ -1,0 +1,26 @@
+{
+    "input": {
+        "N": 1,
+        "C": 80,
+        "H": 1,
+        "W": 400
+    },
+    "model": {
+        "n_flows": 12,
+        "n_group": 8,
+        "n_early_every": 4,
+        "n_early_size": 2,
+        "n_mel_channels": 80,
+        "sigma": 1,
+        "kernel_size": 3,
+        "dilation_num": 8,
+        "skip_size": 256,
+        "residue_size": 256,
+        "sampling_rate": 22050
+    },
+    "tensorrt": {
+        "FP16_ON": true,
+        "INT8_ON": true,
+        "max_workspace_size": 1
+    }
+}
